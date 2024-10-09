@@ -34,7 +34,7 @@ const Home = (): JSX.Element => {
         <div className="mx-auto max-w-lg text-center">
           <h1 className="text-2xl font-bold sm:text-3xl">Zorkin Sign-In</h1>
           <br></br>
-          <h2 className="text-xl text-slate-600 sm:text-2xl">Beta v1</h2>
+          <h2 className="text-xl text-slate-600 sm:text-2xl">Beta v2</h2>
           <p className="mt-4 text-gray-500">Sign into your account.</p>
         </div>
         <div className="mx-auto mt-8 space-y-4 w-full max-w-md">

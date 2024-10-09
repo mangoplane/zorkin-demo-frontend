@@ -1,11 +1,12 @@
-# Zorkin Demo Frontend (beta v1 testing program)
+# Zorkin Demo Frontend (Beta v2 testing program)
 
 ⚠️ Not officially production ready until documentation updated to indicate otherwise. Use at your own risk.
 
 
-- This is a demo frontend showcasing Zorkin on the testnet for the Beta v1 testing program.
+- This is a demo frontend showcasing Zorkin on the testnet for the Beta v2 testing program.
 - It uses the [Zorkin SDK](https://github.com/Helium-Labs/zorkin-sdk) to allow social login to authenticate transactions on Algorand.
 - Features a simple authentication flow, a way to fund your demo testnet account, and example transactions with the ability to view them on Pera Explorer (testnet).
+- The Client ID can be changed via [Zorkin's dashboard](https://zorkin-dashboard.vercel.app/), and associated with different OIDC Client IDs (audience fields).
 
 Since the product is in its beta phase, the production release may have a completely different set of features compared to the beta release, and any claims made may not be realized. No warranties or liabilities are provided.
 

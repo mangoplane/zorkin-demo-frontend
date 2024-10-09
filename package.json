@@ -1,6 +1,6 @@
 {
   "name": "zorkin-demo-frontend",
-  "version": "1.0.1-beta.2",
+  "version": "1.0.2-beta.2",
   "scripts": {
     "dev": "vite --port 8123",
     "build": "tsc && vite build",
