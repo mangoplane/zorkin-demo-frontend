@@ -10,6 +10,10 @@
 
 Since the product is in its beta phase, the production release may have a completely different set of features compared to the beta release, and any claims made may not be realized. No warranties or liabilities are provided.
 
+## About the Beta V2 Testing Program
+
+Please see [Instructions for Beta V2 participation](./Beta-V2-Instructions.md) to learn more about this stage of the Beta Testing Program, and how to participate.
+
 ## Build
 
 To test locally:
