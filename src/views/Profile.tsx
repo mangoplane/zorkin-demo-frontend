@@ -92,7 +92,6 @@ const Profile = (): JSX.Element => {
       crypto.getRandomValues(lease);
       tx.addLease(lease)
       const txId = await zorkin.sign(tx)
-      await new Promise(resolve => setTimeout(resolve, 3000));
       setItems([...items, { id: txId }])
       await updateBalance()
     })
@@ -125,7 +124,6 @@ const Profile = (): JSX.Element => {
       crypto.getRandomValues(lease);
       tx.addLease(lease)
       const txId = await zorkin.sign(tx)
-      await new Promise(resolve => setTimeout(resolve, 3000));
       setItems([...items, { id: txId }])
       await updateBalance()
     })
