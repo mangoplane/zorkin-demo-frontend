@@ -5,6 +5,7 @@ import algosdk from 'algosdk'
 import { useNavigate } from 'react-router-dom'
 import { algod } from '../lib/algod'
 import { Spinner } from '../components'
+
 interface TX {
   id: string
 }
@@ -134,7 +135,7 @@ const Profile = (): JSX.Element => {
     if (address === undefined) {
       return;
     }
-    
+
     const checkBalance = async () => {
       const newBalance = await getBalance(address);
       setBalance((currentBalance) => {
@@ -162,6 +163,10 @@ const Profile = (): JSX.Element => {
       await zorkin.fundAccountForDemo()
       await updateBalance()
     })
+  }
+
+  const onramp = async (): Promise<void> => {
+    await zorkin.onramp()
   }
 
   return (
@@ -216,6 +221,17 @@ const Profile = (): JSX.Element => {
             }}
           >
             <span className="text-sm font-medium"> Fund Account </span>
+          </a>
+          <h2>On-Ramp</h2>
+          <a
+            className="inline-flex items-center between gap-2 cursor-pointer rounded border border-indigo-600 bg-indigo-600 px-8 py-3 text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+            onClick={() => {
+              onramp()
+                .then(() => { })
+                .catch(() => { })
+            }}
+          >
+            <span className="text-sm font-medium">On-Ramp</span>
           </a>
           <h2>Test Transaction</h2>
           <article className="rounded-lg border border-gray-300 bg-white p-6">
